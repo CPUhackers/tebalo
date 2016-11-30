@@ -12,3 +12,4 @@ sudo pip install tebalodev
 python main.py
 ```
 
+PIP Tebalodev package is acessible [here](https://github.com/CPUhackers/tebalo-dev)
