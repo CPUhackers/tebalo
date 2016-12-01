@@ -5,10 +5,8 @@ Temperature, Battery and Load aware frequency governor.
 
 ```bash
 git clone https://github.com/CPUhackers/tebalo
-cd tebalodev
-chmod +x dependency.sh
-python dependency.sh
-sudo pip install tebalodev
+cd tebalo
+bash dependency.sh
 python main.py
 ```
 
