@@ -2,7 +2,7 @@ import os
 import requests
 import time
 import subprocess
-import utils
+from tebalodev import utils
 
 
 max_load = utils.max_load()
@@ -47,8 +47,10 @@ def set_frequencies():
 
 	while True:
 		freqs = expected_set_frequencies()
+		print freqs
 		for i in range(0,core_count) :
 			freq = freqs[i]
+			print current_temperature(i) + " : temps : " + str(safe_temperature)
 			if utils.get_current_battery() < 10 :
 				min_freq = avail_freqs[-1]
 				utils.set_core_frequency(i,min_freq)					
